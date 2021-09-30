@@ -1,0 +1,10 @@
+.welcomeHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0 0 1rem;
+  font-size: 20pt;
+  * + * {
+    margin-block: 1rem;
+  }
+}

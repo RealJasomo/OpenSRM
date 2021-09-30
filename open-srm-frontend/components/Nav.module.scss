@@ -1,0 +1,19 @@
+@import "styles/palette";
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 4em;
+  background-color: $nav-bg;
+  color: $nav-color;
+  border-bottom: 2px outset white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  .navBrand {
+    margin-inline: 1em;
+    max-height: 100%;
+    img {
+      height: 3em;
+      width: auto;
+    }
+  }
+}

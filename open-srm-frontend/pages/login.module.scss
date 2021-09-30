@@ -1,0 +1,44 @@
+@import "styles/palette";
+
+.loginPage {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: $cyan;
+  overflow-y: auto;
+  .loginContainer {
+    display: grid;
+    min-height: 80vh;
+    width: 80vw;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+    &,
+    .loginForm {
+      $radius: 3em;
+      border-radius: $radius 0 0 $radius;
+    }
+
+    .loginForm {
+      background: linear-gradient(to top left, $primary, $secondary);
+      .loginContent {
+        padding: 2em;
+        color: white;
+        position: relative;
+        .loginAside {
+          position: absolute;
+          top: 50%;
+          right: -25%;
+          transform: translateX(25%);
+          & img {
+            height: 20em;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
